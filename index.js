@@ -1,11 +1,10 @@
 const express = require('express');
-
 const app = express();
 
 
 app.post('/getData', (req, res) => {
     console.log("hello");
-    // console.log(req);
+    console.log("req" , req);
 
     res.send("received data");
 })
