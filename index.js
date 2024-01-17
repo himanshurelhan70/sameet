@@ -4,7 +4,7 @@ const app = express();
 
 app.post('/getData', (req, res) => {
     console.log("hello");
-    console.log("req" , req);
+    console.log("req" , req.body);
 
     res.send("received data");
 })
